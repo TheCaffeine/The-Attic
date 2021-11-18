@@ -5,16 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theatric</title>
-    <link rel="stylesheet" href="css/css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/lightbox.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="{{ url_for('static', filename='/css/css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='/css/lightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='/css/animate.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='/css/slick.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='/css/style.css') }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
-    <script src="js/easy_slides.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename = 'js/easy_slides.js') }}"></script>
 
 </head>
 
@@ -44,8 +44,8 @@ Fixed Navigation
       <nav class="navbar navbar-expand-lg navbar-light">
         <!-- logo -->
         <a style="color:#944242;font-weight: bold;" class="navbar-brand logo" href="#">
-          <img style="width:37px; height:37px;float:left" class="logo-default" src="images/easel.png" alt="logo"/>
-          <img style="width:37px; height:37px;float:left" class="logo-white" src="images/easel.png" alt="logo"/>
+          <img style="width:37px; height:37px;float:left" class="logo-default" src="{{ url_for('static', filename='/images/easel.png') }}" alt="logo"/>
+          <img style="width:37px; height:37px;float:left" class="logo-white" src="{{ url_for('static', filename='/images/easel.png') }}" alt="logo"/>
           THE_ARTIC
         </a>
         <!-- /logo -->
@@ -108,7 +108,7 @@ Fixed Navigation
               <!-- Cart Item -->
 							<div class="media">
 								<a class="pull-left" href="#!">
-									<img style="margin-left: 10px;"class="media-object" src="images/trial.jpg" alt="image" width="100" height="110" />
+									<img style="margin-left: 10px;"class="media-object" src="{{ url_for('static', filename='/images/trial.jpg') }}" alt="image" width="100" height="110" />
 								</a>
 								<div class="media-body">
 									<h4 class="media-heading"><a href="#!" style="color: #fff;font-size: 20px;">Calvary</a></h4>
@@ -123,7 +123,7 @@ Fixed Navigation
                             <!-- Cart Item -->
 							<div class="media">
 								<a class="pull-left" href="#!">
-									<img style="margin-left: 10px;margin-top: 5px;"class="media-object" src="images/trial2.jpg" alt="image" width="100" height="110" />
+									<img style="margin-left: 10px;margin-top: 5px;"class="media-object" src="{{ url_for('static', filename='/images/trial2.jpg') }}" alt="image" width="100" height="110" />
 								</a>
 								<div class="media-body">
 									<h4 class="media-heading"><a href="#!" style="color: #fff;font-size: 20px;">Sculpt</a></h4>
@@ -158,15 +158,15 @@ Fixed Navigation
   <!--
   End Fixed Navigation
   ==================================== -->
-
+  
   <!-- modal -->
-
+  
     <!-- Modal -->
     <div class="modal fade" id="elegantModalForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <!--Content-->
-            <div style="background-image: url('images/card.jpg');background-size: cover;background-position: center;"
+            <div style="background-image:url('{{ url_for('static', filename='/images/card.jpg') }}');background-size: cover;background-position: center;"
                 class="modal-content form-elegant">
                 <!--Header-->
                 <div class="modal-header text-center">
@@ -200,7 +200,7 @@ Fixed Navigation
 
                     <div style="margin-right: 0px;" class="row my-3 d-flex justify-content-center">
                         <ul style="display: flex;" class="footer-media-link">
-                            <ul><a href="/"><i style="margin-left: 10px;"" class="bi bi-twitter" aria-hidden="true"> <svg
+                            <ul><a href="/"><i style="margin-left: 10px;" class="bi bi-twitter" aria-hidden="true"> <svg
                                             xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
                                             <path
@@ -245,7 +245,7 @@ Fixed Navigation
   ============================== -->
 
   <div class="hero-slider">
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider1.jpg);">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider1.jpg') }}')">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -257,7 +257,7 @@ Fixed Navigation
 			</div>
 		</div>
 	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider2.jpg);">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider2.jpg') }}')">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -270,7 +270,7 @@ Fixed Navigation
 			</div>
 		</div>
 	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider3.jpg);">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider3.jpg') }}')">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -283,7 +283,7 @@ Fixed Navigation
 			</div>
 		</div>
 	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/slider4.jpg);">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider4.jpg') }}')">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -296,7 +296,7 @@ Fixed Navigation
 			</div>
 		</div>
 	</div>
-	<div class="slider-item th-fullpage hero-area" style="background-image: url(images/fslide.jpg);">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/fslide.jpg') }}')">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
@@ -327,39 +327,39 @@ Fixed Navigation
         <p style='text-align:center;display: flex;justify-content:center;font-size:35px;color:#302929;text-shadow: 2px 2px 8px #000000c7;'>Featured Artworks From Across The Country All The Way Around The Globe</p>
   <div class="slider slider_circle_10">
       <div>
-          <img src="images/creativity1.jpg">
+          <img src="{{ url_for('static', filename='/images/creativity1.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">Raining Bow</h9>
       </div>
       <div>
-          <img src="images/singing.jpg">
+          <img src="{{ url_for('static', filename='/images/singing.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 85%;" class="text">Jazz Dude</h9>
       </div>
       <div>
-          <img src="images/model1.jpg">
+          <img src="{{ url_for('static', filename='/images/model1.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">Shining Beauty</h9>
       </div>
       <div>
-          <img src="images/music.jpg">
+          <img src="{{ url_for('static', filename='/images/music.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 44%;top: 90%;" class="text">The Mic</h9>
       </div>
       <div>
-          <img src="images/model.jpg">
+          <img src="{{ url_for('static', filename='/images/model.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 45%;top: 90%;" class="text">Vintage</h9>
       </div>
       <div>
-          <img src="images/mapera.jpg">
+          <img src="{{ url_for('static', filename='/images/mapera.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">Black Lemon</h9>
       </div>
       <div>
-          <img src="images/models.jpg">
+          <img src="{{ url_for('static', filename='/images/models.jpg') }}">
           <h9 data style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 45%;top: 90%;" class="text">African</h9>
       </div>
       <div>
-          <img src="images/malemodel.jpg">
+          <img src="{{ url_for('static', filename='/images/malemodel.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">90's Zulu</h9>
       </div>
       <div>
-          <img src="images/art.jpg">
+          <img src="{{ url_for('static', filename='/images/art.jpg') }}">
           <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 85%;" class="text">Sssmokin!!</h9>
       </div>
       <div class="next_button"></div>
@@ -387,31 +387,31 @@ Fixed Navigation
 
 
 <div class="card-container">
-    <div class="panel prominent" style='background-image: url(images/trial2.jpg);'>
+    <div class="panel prominent" style="background-image: url('{{ url_for('static', filename='/images/trial2.jpg') }}')">
         <h7>Art Works <br><br></h7>
         <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
-    <div class="panel" style='background-image: url(images/card3.jpg);'>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card3.jpg') }}')">
       <h7>Art Works <br><br></h7>
       <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
-    <div class="panel" style='background-image: url(images/card4.jpg);'>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card4.jpg') }}')">
       <h7>Art Works <br><br></h7>
       <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
-    <div class="panel" style='background-image: url(images/card.jpg);'>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card.jpg') }}')">
       <h7>Art Works <br><br></h7>
       <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
-    <div class="panel" style='background-image: url(images/trial.jpg);'>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/trial.jpg') }}')">
       <h7>Art Works <br><br></h7>
       <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
-    <div class="panel" style='background-image: url(images/card6.jpg);'>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card6.jpg') }}')">
       <h7>Art Works <br><br></h7>
       <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
-    <div class="panel" style='background-image: url(images/trial1.jpg);'>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/trial1.jpg') }}')">
       <h7>Art Works <br><br></h7>
       <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
     </div>
@@ -444,7 +444,7 @@ Fixed Navigation
           </div>
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="images/trial.jpg" style="width:430px;height:200px" alt="">
+              <img class="img-responsive" src="{{ url_for('static', filename='/images/trial.jpg') }}" style="width:430px;height:200px" alt="">
             </div>
           </div>
         </div>
@@ -457,7 +457,7 @@ Fixed Navigation
         <div class="row">
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="images/trial2.jpg" style="width:430px;height:200px;margin-top:20px;" alt="">
+              <img class="img-responsive" src="{{ url_for('static', filename='/images/trial2.jpg') }}" style="width:430px;height:200px;margin-top:20px;" alt="">
             </div>
           </div>
           <div class="col-md-6">
@@ -492,7 +492,7 @@ Fixed Navigation
           </div>
           <div class="col-md-6">
             <div class="img-content">
-              <img class="img-responsive" src="images/card.jpg" style="width:430px;height:200px;margin-top: 10px;" alt="">
+              <img class="img-responsive" src="{{ url_for('static', filename='/images/card.jpg') }}" style="width:430px;height:200px;margin-top: 10px;" alt="">
             </div>
           </div>
         </div>
@@ -562,26 +562,26 @@ Fixed Navigation
       Essential Scripts
       =====================================-->
       <!-- Main jQuery -->
-      <script src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="{{ url_for('static',filename ='js/jquery.min.js') }}"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 
       
       <!-- Bootstrap4 -->
-      <script src="js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="{{ url_for('static',filename ='js/bootstrap.min.js') }}"></script>
       <!-- Parallax -->
-      <script src="js/jquery.parallax-1.1.3.js"></script>
+      <script type="text/javascript" src=" {{ url_for('static',filename ='js/jquery.parallax-1.1.3.js') }}"></script>
       <!-- lightbox -->
-      <script src="js/lightbox.min.js"></script>
+      <script type="text/javascript" src="  {{url_for('static',filename ='js/lightbox.min.js') }}"></script>
       <!-- Owl Carousel -->
-      <script src="js/slick.min.js"></script>
+      <script type="text/javascript" src="  {{url_for('static',filename ='js/slick.min.js') }}"></script>
       <!-- filter -->
-      <script src="js/jquery.filterizr.min.js"></script>
+      <script type="text/javascript" src=" {{ url_for('static',filename ='js/jquery.filterizr.min.js') }}"></script>
       <!-- Smooth Scroll js -->
-      <script src="js/smooth-scroll.min.js"></script>
+      <script type="text/javascript" src="  {{ url_for('static',filename ='js/smooth-scroll.min.js') }}"></script>
       
       <!-- Custom js -->
-      <script src="js/script.js"></script>
+      <script type="text/javascript" src="{{ url_for('static',filename = 'js/script.js') }}"></script>
   
-  
+      
 </body>
 </html>
