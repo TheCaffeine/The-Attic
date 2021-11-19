@@ -16,21 +16,21 @@
   <meta name="generator" content="Themefisher Constra HTML Template v1.0">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='/images/favicon.png') }}" />
   
   <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="plugins/themefisher-font/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/plugins/themefisher-font/style.css') }}">
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/plugins/bootstrap/css/bootstrap.min.css') }}">
   
   <!-- Animate css -->
-  <link rel="stylesheet" href="plugins/animate/animate.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/plugins/animate/animate.css') }}s">
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/plugins/slick/slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/plugins/slick/slick-theme.css') }}">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/commerce.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/commerce.css') }}">
 
 </head>
 
@@ -45,7 +45,7 @@
         	<i class="tf-ion-android-checkmark-circle"></i>
           <h2 class="text-center">Thank you! For your payment</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, sed.</p>
-          <a href="shopbar.html" class="btn btn-main mt-20">Continue Browsing</a>
+          <a href="/shopbar" class="btn btn-main mt-20">Continue Browsing</a>
         </div>
       </div>
     </div>
@@ -57,25 +57,25 @@
     =====================================-->
     
     <!-- Main jQuery -->
-    <script src="plugins/jquery/dist/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/jquery/dist/jquery.min.js') }}"></script>
     <!-- Bootstrap 3.1 -->
-    <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/bootstrap/js/bootstrap.min.js') }}"></script>
     <!-- Bootstrap Touchpin -->
-    <script src="plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/bootstrap-touchspin/dist/jquery.bootstrap-touchspin.min.js') }}"></script>
     <!-- Instagram Feed Js -->
-    <script src="plugins/instafeed/instafeed.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/instafeed/instafeed.min.js') }}"></script>
     <!-- Video Lightbox Plugin -->
-    <script src="plugins/ekko-lightbox/dist/ekko-lightbox.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/ekko-lightbox/dist/ekko-lightbox.min.js') }}"></script>
     <!-- Count Down Js -->
-    <script src="plugins/syo-timer/build/jquery.syotimer.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/syo-timer/build/jquery.syotimer.min.j') }}"></script>
 
     <!-- slick Carousel -->
-    <script src="plugins/slick/slick.min.js"></script>
-    <script src="plugins/slick/slick-animation.min.js"></script>
+    <script src="{{ url_for('static', filename='/plugins/slick/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/plugins/slick/slick-animation.min.js') }}"></script>
 
 
     <!-- Main Js File -->
-    <script src="js/barshop.js"></script>
+    <script src="{{ url_for('static', filename='/js/barshop.js') }}"></script>
     
 
 

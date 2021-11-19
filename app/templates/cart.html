@@ -16,18 +16,18 @@
   <meta name="generator" content="Themefisher Constra HTML Template v1.0">
     
   <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="css/css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/css/style.css') }}">
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css') }}">
   
   <!-- Animate css -->
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/animate.css') }}">
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/slick-theme.css') }}">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/commerce.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/commerce.css') }}">
 
 </head>
 
@@ -75,7 +75,7 @@
                     <tr class="">
                       <td class="">
                         <div class="product-info">
-                          <img width="80" src="images/shop/cart/cart-1.jpg" alt="" />
+                          <img width="80" src="{{ url_for('static', filename='/images/shop/cart/cart-1.jpg') }}" alt="" />
                           <a href="#!">African Heritage 1921</a>
                         </div>
                       </td>
@@ -87,7 +87,7 @@
                     <tr class="">
                       <td class="">
                         <div class="product-info">
-                          <img width="80" src="images/shop/cart/cart-2.jpg" alt="" />
+                          <img width="80" src="{{ url_for('static', filename='/images/shop/cart/cart-2.jpg') }}" alt="" />
                           <a href="#!">Calvary</a>
                         </div>
                       </td>
@@ -99,7 +99,7 @@
                     <tr class="">
                       <td class="">
                         <div class="product-info">
-                          <img width="80" src="images/shop/cart/cart-3.jpg" alt="" />
+                          <img width="80" src="{{ url_for('static', filename='/images/shop/cart/cart-3.jpg') }}" alt="" />
                           <a href="#!">Angelica</a>
                         </div>
                       </td>
@@ -110,7 +110,7 @@
                     </tr>
                   </tbody>
                 </table>
-                <a href="checkout.html" class="btn btn-main pull-right">Checkout</a>
+                <a href="/checkout" class="btn btn-main pull-right">Checkout</a>
               </form>
             </div>
           </div>
@@ -126,17 +126,17 @@
     =====================================-->
     
     <!-- Main jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/jquery.min.js') }}"></script>
     <!-- Bootstrap 3.1 -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/bootstrap.min.js') }}"></script>
 
     <!-- slick Carousel -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/slick-animation.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/slick-animation.min.js') }}"></script>
 
 
     <!-- Main Js File -->
-    <script src="js/barshop.js"></script>
+    <script src="{{ url_for('static', filename='/js/barshop.js') }}"></script>
     
 
 
