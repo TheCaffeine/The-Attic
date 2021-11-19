@@ -11,14 +11,14 @@
 
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css') }}">
   <!-- slick slider -->
-  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/slick.css') }}">
   <!-- themefy-icon -->
-  <link rel="stylesheet" href="css/themify-icons.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/themify-icons.css') }}">
 
   <!-- Main Stylesheet -->
-  <link href="css/art.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='/css/art.css') }}" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oregano&display=swap" rel="stylesheet">
 
 
@@ -32,7 +32,7 @@
       <div class="row featured-post-slider">
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">LifeStyle</p>
@@ -44,7 +44,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card3.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card3.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Philosophy</p>
@@ -57,7 +57,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card4.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card4.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Fashion</p>
@@ -70,7 +70,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card5.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card5.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Article</p>
@@ -83,7 +83,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card6.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card6.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Nature</p>
@@ -111,7 +111,7 @@
     <div class="row masonry-container">
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/cart1.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/cart1.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Family</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -122,7 +122,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/card4.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/card4.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -133,7 +133,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/cart2.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/card1.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -144,7 +144,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/trial.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/trial1.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -155,7 +155,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/try.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/try.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -166,7 +166,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/trial1.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/trial1.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -177,7 +177,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/trial3.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/trial3.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -188,7 +188,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/card.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/card.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -199,7 +199,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/card3.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/card3.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -210,7 +210,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/card4.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/card4.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -221,7 +221,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/cardbg.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/cardbg.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -232,7 +232,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/background.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/background.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -243,7 +243,7 @@
       </div>
       <div class="col-lg-4 col-sm-6 mb-5">
         <article class="text-center">
-          <img class="img-fluid mb-4" src="images/card5.jpg" alt="post-thumb">
+          <img class="img-fluid mb-4" src="{{ url_for('static', filename='/images/card5.jpg') }}" alt="post-thumb">
           <p class="text-uppercase mb-2">ART</p>
           <h4 class="title-border"><a class="text-dark" href="/">Lorem Ipsum</a></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
@@ -284,7 +284,7 @@
       <div class="row featured-post-slider">
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">LifeStyle</p>
@@ -296,7 +296,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card3.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card3.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Philosophy</p>
@@ -309,7 +309,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card4.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card4.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Fashion</p>
@@ -322,7 +322,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card5.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card5.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Article</p>
@@ -335,7 +335,7 @@
         </div>
         <div class="col-lg-3 col-sm-6 mb-2 mb-lg-0 px-1">
           <article class="card bg-dark text-center text-white border-0 rounded-0">
-            <img class="card-img rounded-0 img-fluid w-100" src="images/card6.jpg" alt="post-thumb">
+            <img class="card-img rounded-0 img-fluid w-100" src="{{ url_for('static', filename='/images/card6.jpg') }}" alt="post-thumb">
             <div class="card-img-overlay">
               <div class="card-content">
                 <p class="text-uppercase">Nature</p>
@@ -353,24 +353,24 @@
 
 
 <!-- jQuery -->
-<script src="js/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='/js/jquery.min.js') }}"></script>
 <!-- Bootstrap JS -->
-<script src="js/bootstrap.min.js"></script>
+<script src="{{ url_for('static', filename='/js/bootstrap.min.js') }}"></script>
 <!-- slick slider -->
-<script src="js/slick.min.js"></script>
+<script src="{{ url_for('static', filename='/js/slick.min.js') }}"></script>
 <!-- masonry -->
-<script src="js/masonry.js"></script>
+<script src="{{ url_for('static', filename='/js/masonry.js') }}"></script>
 <!-- instafeed -->
-<script src="plugins/instafeed/instafeed.min.js"></script>
+<script src="{{ url_for('static', filename='/plugins/instafeed/instafeed.min.js') }}"></script>
 <!-- smooth scroll -->
-<script src="js/smooth-scroll.js"></script>
+<script src="{{ url_for('static', filename='/js/smooth-scroll.js') }}"></script>
 <!-- headroom -->
-<script src="js/headroom.js"></script>
+<script src="{{ url_for('static', filename='/js/headroom.js') }}"></script>
 <!-- reading time -->
-<script src="js/readingTime.min.js"></script>
+<script src="{{ url_for('static', filename='/js/readingTime.min.js') }}"></script>
 
 <!-- Main Script -->
-<script src="js/dessy.js"></script>
+<script src="{{ url_for('static', filename='/js/dessy.js') }}"></script>
 
 </body>
 </html>

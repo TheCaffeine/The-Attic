@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
 <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-		<link rel="stylesheet" type="text/css" href="css/museum.css">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/css/museum.css') }}">
 		<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Droid+Serif" rel="stylesheet">
 		<title>Museum Art</title>
@@ -28,7 +28,7 @@
 								<span>1503</span>
 							</div>
 							<div class="image">
-								<img src="images/monalisa.jpg" style="width: 405; height: 601;">
+								<img src="{{ url_for('static', filename='/images/monalisa.jpg') }}" style="width: 405; height: 601;">
 								<div class="title">
 									<h2>Louvre Museum  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -47,7 +47,7 @@
 								<span>1889</span>
 							</div>
 							<div class="image">
-								<img src="images/vincent.jpg" style="width: 405; height: 601;">
+								<img src="{{ url_for('static', filename='/images/vincent.jpg') }}" style="width: 405; height: 601;">
 								<div class="title">
 									<h2> Musée d'Orsay Museum<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -67,7 +67,7 @@
 								<span>1901</span>
 							</div>
 							<div class="image">
-								<img src="images/railway1.jpg" style="width: 405; height: 601;">
+								<img src="{{ url_for('static', filename='/images/railway1.jpg') }}" style="width: 405; height: 601;">
 								<div class="title">
 									<h2> Nairobi Railway Museum <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -87,7 +87,7 @@
 								<span>1900</span>
 							</div>
 							<div class="image">
-								<img src="images/woman.jpg" style="width: 505; height: 401;">
+								<img src="{{ url_for('static', filename='/images/woman.jpg') }}" style="width: 505; height: 401;">
 								<div class="title">
 									<h2>The Museo Nacional de Bellas Artes<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -107,7 +107,7 @@
 								<span>2016</span>
 							</div>
 							<div class="image">
-								<img src="images/drawing.jpg" style="width: 405; height: 601;">
+								<img src="{{ url_for('static', filename='/images/drawing.jpg') }}" style="width: 405; height: 601;">
 								<div class="title">
 									<h2>Street Art <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -127,7 +127,7 @@
 								<span>2016</span>
 							</div>
 							<div class="image">
-								<img src="images/railway.jpg" style="width: 405; height: 601;">
+								<img src="{{ url_for('static', filename='/images/railway.jpg') }}" style="width: 405; height: 601;">
 								<div class="title">
 									<h2> Nairobi Railway Museum  <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -147,7 +147,7 @@
 								<span>2016</span>
 							</div>
 							<div class="image">
-								<img src="images/bike.jpg" style="width: 405; height: 601;">
+								<img src="{{ url_for('static', filename='/images/bike.jpg') }}" style="width: 405; height: 601;">
 								<div class="title">
 									<h2> Shira Galleria<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h2>
 								</div>
@@ -163,8 +163,8 @@
 		</div>
 
 
-		<script src="js/timeLine.js"></script>
-		<script src="js/museum.js"></script>
+		<script src="{{ url_for('static', filename='/js/timeLine.js') }}"></script>
+		<script src="{{ url_for('static', filename='/js/museum.js') }}"></script>
 		<script type="text/javascript">
 
 			var _gaq = _gaq || [];

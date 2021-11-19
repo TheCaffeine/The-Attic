@@ -1,0 +1,318 @@
+{% extends "base.html" %} {% block title %}TheArtic{% endblock %} 
+
+
+
+{% block content %}
+ <!-- sliders
+  ============================== -->
+
+  <div class="hero-slider">
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider1.jpg') }}')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 style="font-size: 45px;font-weight: normal;font-family: Oregano;color: #c17757;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">WELCOME TO THE_ARTIC</h1>
+                    <hr data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".2" style="width: 550px;top: 551.78px;border: 1px solid #c17757;">
+					<p style="font-size: 17px;font-weight: 400;color: #998c8c;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">I saw the angel in the marble and carved until I set him free. <br> - Michelangelo</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="#">Explore Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider2.jpg') }}')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 style="font-size: 45px;font-weight: normal;font-family: Oregano;color: #6d5a28;top:329px;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">BROWSE BY COLLECTION</h1>
+                    <hr data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".2" style="width: 550px;top: 551.78px;border: 1px solid #6d5a28;">
+					<p style="font-size: 17px;font-weight: 400;color: #998c8c;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, <br> veritatis tempore nostrum id
+						officia quaerat eum corrupti, <br> ipsa aliquam velit.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="#">Browse</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider3.jpg') }}')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 style="font-size: 45px;font-weight: normal;font-family: Oregano;color: #efa4cd;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">TROVE</h1>
+                    <hr data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".2" style="width: 550px;top: 551.78px;border: 1px solid #efa4cd;">
+					<p style="font-size: 17px;font-weight: 400;color: #998c8c;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, <br> veritatis tempore nostrum id
+						officia quaerat eum corrupti, <br> ipsa aliquam velit.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="/">Quest</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/slider4.jpg') }}')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 style="font-size: 45px;font-weight: normal;font-family: Oregano;color: #722c4a;;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">SELL WORKS FROM YOUR <br> COLLECTION</h1>
+                    <hr data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".2" style="width: 550px;top: 551.78px;border: 1px solid #722c4a;">
+					<p style="font-size: 17px;font-weight: 400;color: #998c8c;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, <br> veritatis tempore nostrum id
+						officia quaerat eum corrupti, <br> ipsa aliquam velit.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="service.html">Explore</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="slider-item th-fullpage hero-area" style="background-image: url('{{ url_for('static', filename='/images/fslide.jpg') }}')">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h1 style="font-size: 45px;font-weight: normal;font-family: Oregano;color: #f3bb5f;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">EMERGING ARTIST?</h1>
+                    <hr data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".2" style="width: 550px;top: 551.78px;border: 1px solid #c17757;">
+					<p style="font-size:17px;font-weight: 400;color: #998c8c;" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, <br> veritatis tempore nostrum id
+						officia quaerat eum corrupti, <br> ipsa aliquam velit.</p>
+					<a data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".8" class="btn btn-main" href="service.html">Sign Up</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<!-- end sliders
+======================== -->
+
+<!-- featured -->
+
+
+<h1 id='featured' style="text-align:center;background-color:hsla(0, 0%, 3%, 0.247);margin-top: 40px;color:rgb(251, 254, 229);background-size: cover;border-radius: 10px; box-shadow: 2px 2px 8px #151515c7;margin-left: 300px;margin-right: 300px;
+">FEATURED</h1>
+
+
+
+<section class="spin" style="background-image: url(images/trial1.jpg); background-size: cover; background-repeat: no-repeat;opacity: 0.975;margin: 30px;box-shadow: 4px 4px 16px #151515c7;border-radius: 10px;">
+        <p style='text-align:center;display: flex;justify-content:center;font-size:35px;color:#302929;text-shadow: 2px 2px 8px #000000c7;'>Featured Artworks From Across The Country All The Way Around The Globe</p>
+  <div class="slider slider_circle_10">
+      <div>
+          <img src="{{ url_for('static', filename='/images/creativity1.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">Raining Bow</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/singing.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 85%;" class="text">Jazz Dude</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/model1.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">Shining Beauty</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/music.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 44%;top: 90%;" class="text">The Mic</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/model.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 45%;top: 90%;" class="text">Vintage</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/mapera.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">Black Lemon</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/models.jpg') }}">
+          <h9 data style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 45%;top: 90%;" class="text">African</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/malemodel.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 90%;" class="text">90's Zulu</h9>
+      </div>
+      <div>
+          <img src="{{ url_for('static', filename='/images/art.jpg') }}">
+          <h9 style="text-align: center;cursor: pointer;color: white;position: absolute;display: flex;left: 40%;top: 85%;" class="text">Sssmokin!!</h9>
+      </div>
+      <div class="next_button"></div>
+      <div class="prev_button"></div>
+  </div>
+  <script>
+          EasySlides('.slider_circle_10',{
+              'autoplay': true,
+              'show': 13
+          });
+  </script>
+</section>
+
+
+<!-- ======== -->
+
+
+<h1 id="emerging" style="text-align:center;background-color:hsla(0, 0%, 3%, 0.247);margin-top: 40px;color:rgb(227, 202, 225);background-size: cover;border-radius: 10px; box-shadow: 2px 2px 8px #151515c7;
+">EMMERGING ARTISTS</h1>
+
+
+
+
+<!-- content -->
+
+
+<div class="card-container">
+    <div class="panel prominent" style="background-image: url('{{ url_for('static', filename='/images/trial2.jpg') }}')">
+        <h7>Art Works <br><br></h7>
+        <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card3.jpg') }}')">
+      <h7>Art Works <br><br></h7>
+      <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card4.jpg') }}')">
+      <h7>Art Works <br><br></h7>
+      <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card.jpg') }}')">
+      <h7>Art Works <br><br></h7>
+      <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/trial.jpg') }}')">
+      <h7>Art Works <br><br></h7>
+      <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/card6.jpg') }}')">
+      <h7>Art Works <br><br></h7>
+      <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+    <div class="panel" style="background-image: url('{{ url_for('static', filename='/images/trial1.jpg') }}')">
+      <h7>Art Works <br><br></h7>
+      <h7 style="font-size:20px;color: #998c8c;">Leornardo Da Vinci</h7>
+    </div>
+</div>
+
+<!-- end content -->
+
+
+
+<section id="case" class="case-study" style="background-color: white;">
+    <div class="text-center">
+      <h2  class="title">Case Study</h2>
+    </div>
+    <!-- Case Study Description
+      top section -->
+    <div class="case-study-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- inner sub-title -->
+            <div class="content">
+              <h4 class="inner-title">Lorem ipsum</h4>
+              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!
+              </p>
+              <!-- View More Details -->
+              <a style="margin-bottom: 10px;" class="btn btn-default btn-main" href="#" role="button">View More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-content">
+              <img class="img-responsive" src="{{ url_for('static', filename='/images/trial.jpg') }}" style="width:430px;height:200px" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Case Study Description
+      bottom section -->
+    <div class="case-study-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="img-content">
+              <img class="img-responsive" src="{{ url_for('static', filename='/images/trial2.jpg') }}" style="width:430px;height:200px;margin-top:20px;" alt="">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <!-- inner sub-title -->
+            <div class="content">
+              <h4 class="inner-title">Lorem Ipsum</h4>
+              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex unde soluta, nesciunt consequuntur accusamus sint! Eaque quod consectetur laborum quae repudiandae illum hic explicabo sunt perferendis. Voluptas, fugiat eos sed!
+              </p>
+              <!-- View More Details -->
+              <a class="btn btn-default btn-main" href="#" role="button">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="case-study-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <!-- inner sub-title -->
+            <div class="content">
+              <h4 class="inner-title">Lorem Ipsum</h4>
+              <p class="case-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euiyd tincidunt ut laoreet dolore magna aliquam nibh utpat.Ullamcorper suscipit lobo nibh euiyd tinci- dunt ut laoreet.</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem impedit molestias cumque dolorum, sunt, provident blanditiis tempora, aut explicabo error ipsa repudiandae. Dolores eius eaque eum mollitia esse nisi necessitatibus distinctio ea, dolorem non, optio minima temporibus blanditiis, quidem aperiam!
+              </p>
+              <!-- View More Details -->
+              <a class="btn btn-default btn-main" href="#" role="button" style="margin-bottom: 20px;">View More</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="img-content">
+              <img class="img-responsive" src="{{ url_for('static', filename='/images/card.jpg') }}" style="width:430px;height:200px;margin-top: 10px;" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class="bg-one">
+    <div class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <h3>about</h3>
+            <p>Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere.</p>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <ul>
+              <li><h3>Our Services</h3></li>
+              <li><a href="#">Graphic Design</a></li>
+              <li><a href="#">Auctions</a></li>
+              <li><a href="#">Web Development</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <ul>
+              <li><h3>Quick Links</h3></li>
+              <li><a href="/">Partners</a></li>
+              <li><a href="/">About</a></li>
+              <li><a href="/">FAQ’s</a></li>
+              <li><a href="/">Badges</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <ul>
+              <li><h3>Connect with us Socially</h3></li>
+              <li><a href="/">Facebook</a></li>
+              <li><a href="/">Twitter</a></li>
+              <li><a href="/">Youtube</a></li>
+              <li><a href="/">Pinterest</a></li>
+            </ul>
+          </div>
+          <!-- End of .col-sm-3 -->
+  
+        </div>
+      </div> <!-- end container -->
+    </div>
+    <div class="footer-bottom">
+      <h5>Copyright 2021. All rights reserved.</h5>
+      <h6>Design and Developed by <a href="">Artic Team</a></h6>
+    </div>
+  </footer> <!-- end footer -->
+  
+  {% endblock %}
+ 

@@ -16,18 +16,18 @@
   <meta name="generator" content="Themefisher Constra HTML Template v1.0">
     
   <!-- Themefisher Icon font -->
-  <link rel="stylesheet" href="css/css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/css/style.css') }}">
   <!-- bootstrap.min css -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/bootstrap.min.css') }}">
   
   <!-- Animate css -->
-  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/animate.cs') }}">
   <!-- Slick Carousel -->
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/slick.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/slick-theme.css') }}">
   
   <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/commerce.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='/css/commerce.css') }}">
 
 </head>
 
@@ -39,7 +39,7 @@
 				<div class="content">
 					<h1 class="page-name">Shop</h1>
 					<ol class="breadcrumb">
-						<li><a href="base.html">Home</a></li>
+						<li><a href="/">Home</a></li>
 						<li class="active">shop</li>
 					</ol>
 				</div>
@@ -133,7 +133,7 @@
 				<div class="product-item">
 					<div class="product-thumb">
 						<span class="bage">Sale</span>
-						<img class="img-responsive" src="images/trial.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/trial.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -159,7 +159,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/trial1.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/trial1.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -185,7 +185,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/trial2.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/trial3.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -211,7 +211,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/trial3.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/trial2.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -237,7 +237,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/card5.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/card5.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -263,7 +263,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/card4.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/card4.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -290,7 +290,7 @@
 				<div class="product-item">
 					<div class="product-thumb">
 						<span class="bage">Sale</span>
-						<img class="img-responsive" src="images/card3.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/card3.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -316,7 +316,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/card6.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/card6.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -342,7 +342,7 @@
 			<div class="col-md-4">
 				<div class="product-item">
 					<div class="product-thumb">
-						<img class="img-responsive" src="images/card.jpg" alt="product-img" />
+						<img class="img-responsive" src="{{ url_for('static', filename='/images/card.jpg') }}" alt="product-img" />
 						<div class="preview-meta">
 							<ul>
 								<li>
@@ -377,7 +377,7 @@
 			        	<div class="row">
 			        		<div class="col-md-8 col-sm-6 col-xs-12">
 			        			<div class="modal-image">
-				        			<img class="img-responsive" src="images/trial.jpg" alt="product-img" />
+				        			<img class="img-responsive" src="{{ url_for('static', filename='/images/trial.jpg') }}" alt="product-img" />
 			        			</div>
 			        		</div>
 			        		<div class="col-md-4 col-sm-6 col-xs-12">
@@ -387,7 +387,7 @@
 			        				<p class="product-short-description">
 			        					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem iusto nihil cum. Illo laborum numquam rem aut officia dicta cumque.
 			        				</p>
-			        				<a href="cart.html" class="btn btn-main">Add To Cart</a>
+			        				<a href="/cart" class="btn btn-main">Add To Cart</a>
 			        				<a href="#" class="btn btn-transparent">View Product Details</a>
 			        			</div>
 			        		</div>
@@ -409,17 +409,17 @@
     =====================================-->
     
     <!-- Main jQuery -->
-    <script src="js/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/jquery.min.js') }}"></script>
     <!-- Bootstrap 3.1 -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/bootstrap.min.js') }}"></script>
 
     <!-- slick Carousel -->
-    <script src="js/slick.min.js"></script>
-    <script src="js/slick-animation.min.js"></script>
+    <script src="{{ url_for('static', filename='/js/slick.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='/js/slick-animation.min.js') }}"></script>
 
 
     <!-- Main Js File -->
-    <script src="js/barshop.js"></script>
+    <script src="{{ url_for('static', filename='/js/barshop.js') }}"></script>
     
 
 
